@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.clock {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rotateClock 10s linear infinite;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.tap-to-start {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    animation: pulse 2s infinite;
+}
+
+.building {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes rotateClock {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
