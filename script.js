@@ -3,6 +3,6 @@ window.addEventListener('load', function() {
     img.style.opacity = 1; // Fade in the image
 
     setTimeout(function() {
-        window.location.href = 'https://example.com'; // Redirect after 3 seconds
-    }, 6000); // Total time before redirect: image fade-in (3s) + loading animation (3s)
+        window.location.href = 'https://example.com'; // Redirect after total animation time
+    }, 9000); // Total time before redirect: image fade-in (3s) + loading animation (6s)
 });
