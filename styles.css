@@ -22,11 +22,11 @@ img {
 
 .loading {
     opacity: 0;
-    animation: fadeInOut 3s ease-in-out 3s forwards; /* Lasts 3 seconds */
+    animation: fadeInOut 3s ease-in-out 3s forwards;
 }
 
 @keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    20%, 40%, 60% { opacity: 1; }
-    30%, 50%, 70% { opacity: 0; }
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
